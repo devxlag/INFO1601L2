@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Makes any paragraph inside a footer white and bold */
+footer p {
+    color: white !important;
+    font-weight: bold;
+    font-size: 30;
+    padding: 5px;
+}
+
+/* Gives all sections a light blue background */
+section {
+    background-color: aliceblue;
+}
+
+/* Styles sections that are direct children of main */
+main > section {
+    background-color: yellow;
+    border: solid;
+    margin: 10px;
+}
+
+/* Styles any element that comes immediately after h1 */
+h1 + * {
+    background-color: lightskyblue;
+    border: dotted;
+    margin: 10px;
+}
+
+/* Styles any paragraph that comes after another paragraph */
+p ~ p {
+    color: black;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    height: 60px;
+    border: solid;
+    flex-direction: row;
+    background-color: dodgerblue;
+    justify-content: center;
+}
+
+/* Footer paragraph styling */
+footer p {
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+    <h1>Main</h1>
+    <main>
+        <section>
+            Section 1
+            <section>
+                Section 1.1
+            </section>
+        </section>
+        
+        <section>
+            Section 2
+            <section>
+                Section 2.1
+            </section>
+        </section>
+    </main>
+
+    <h1>Footer</h1>
+    <footer>
+        <p>Foot p1</p>
+        <p>Foot p2</p>
+        <p>Foot p3</p>
+    </footer>
+</body>
+</html>
