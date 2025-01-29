@@ -1,5 +1,5 @@
 hidden=[".config"]
-modules = ["nodejs-20", "web", "nix"]
+modules = ["web", "nodejs-20", "nix"]
 run = "npx serve -p 8080"
 
 [nix]
