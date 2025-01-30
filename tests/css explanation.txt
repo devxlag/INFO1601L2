@@ -1,0 +1,28 @@
+Simple explanation of selectors:
+
+a > b (Direct child)
+
+Example: main > section
+Means: "Select b only if it's directly inside a"
+Like selecting sections that are right inside main, not deeper nested
+
+
+a ~ b (General sibling)
+
+Example: p ~ p
+Means: "Select b if it comes after a and they share the same parent"
+Like selecting all paragraphs that come after another paragraph
+
+
+a + b (Adjacent sibling)
+
+Example: h1 + *
+Means: "Select b if it comes immediately after a"
+Like selecting any element that comes right after an h1
+
+
+a b (Descendant)
+
+Example: footer p
+Means: "Select b if it's anywhere inside a"
+Like selecting all paragraphs inside a footer, no matter how deeply nested
